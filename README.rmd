@@ -1,5 +1,10 @@
-# NASS / ARMS Exploratory Data Analysis
-M. Edward (Ed) Borasky  
+---
+title: 'NASS / ARMS Exploratory Data Analysis'
+author: 'M. Edward (Ed) Borasky'
+output: 
+  html_document: 
+    keep_md: yes
+---
 
 # Exploring the NASS / ARMS data with R/RStudio
 
@@ -9,8 +14,7 @@ M. Edward (Ed) Borasky
 3. Pandoc (which RStudio should install!)
 4. Packages TBD but bare minimum is
 
-    
-    ```r
+    ```{r eval=FALSE}
     install.packages(c
       (
         'dplyr',
