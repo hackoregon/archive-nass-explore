@@ -1,7 +1,6 @@
-# NASS / ARMS Exploratory Data Analysis
+# nass-explore: Exploring the NASS / ARMS Data with R/RStudio
 M. Edward (Ed) Borasky  
-
-# Exploring the NASS / ARMS data with R/RStudio
+September 2, 2015  
 
 ## Software requirements:
 1. R (3.2.2 or later)
@@ -13,7 +12,6 @@ M. Edward (Ed) Borasky
     ```r
     install.packages(c
       (
-        'dplyr',
         'ggplot2',
         'rmarkdown',
         'tidyr'
