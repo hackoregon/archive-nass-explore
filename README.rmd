@@ -17,7 +17,6 @@ output:
     ```{r eval=FALSE}
     install.packages(c
       (
-        'dplyr',
         'ggplot2',
         'rmarkdown',
         'tidyr'
