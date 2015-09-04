@@ -35,19 +35,12 @@ if (file.exists('nass-arms.RData')) {
     write.csv(arms.crop.production.practices.oregon,
         file='arms-crop-production-practices.csv', row.names = FALSE)
 
-    # Get NASS census data
-    nass.census.county.oregon <- download.csv(
-    'http://nass-api.azurewebsites.net/api/api_get?agg_level_desc=COUNTY&state_name=OREGON&source_desc=CENSUS&format=csv'
+    # Get NASS data
+    nass.county.oregon <- download.csv(
+    'http://nass-api.azurewebsites.net/api/api_get?agg_level_desc=COUNTY&state_name=OREGON&format=csv'
     )
-    write.csv(nass.census.county.oregon,
-        file='nass-census-county-oregon.csv', row.names = FALSE)
-
-    # Get NASS survey data
-    nass.survey.county.oregon <- download.csv(
-    'http://nass-api.azurewebsites.net/api/api_get?agg_level_desc=COUNTY&state_name=OREGON&source_desc=SURVEY&format=csv'
-    )
-    write.csv(nass.survey.county.oregon,
-        file='nass-survey-county-oregon.csv', row.names = FALSE)
+    write.csv(nass.county.oregon,
+        file='nass-county-oregon.csv', row.names = FALSE)
 
     # save compressed RData for later!
     save.image(file = 'nass-arms.RData')
