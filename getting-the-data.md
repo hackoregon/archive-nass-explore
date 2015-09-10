@@ -1,6 +1,6 @@
 # Downloading NASS/ARMSDB data
 M. Edward (Ed) Borasky  
-September 3, 2015  
+September 10, 2015  
 
 References:
 
@@ -20,6 +20,28 @@ download.csv <- function(url) {
 
 Main script
 
+
+```r
+# Install any missing libraries
+if (!require('ggmap')) {
+    install.packages('ggmap', dependencies = TRUE)
+}
+```
+
+```
+## Loading required package: ggmap
+## Loading required package: ggplot2
+```
+
+```r
+if (!require('choroplethr')) {
+    install.packages('choroplethr', dependencies = TRUE)
+}
+```
+
+```
+## Loading required package: choroplethr
+```
 
 ```r
 # Load the data if the saved image exists
@@ -59,5 +81,5 @@ if (file.exists('nass-arms.RData')) {
 ---
 title: "getting-the-data.r"
 author: "znmeb"
-date: "Thu Sep  3 20:09:25 2015"
+date: "Thu Sep 10 11:57:14 2015"
 ---
