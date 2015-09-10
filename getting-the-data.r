@@ -1,7 +1,7 @@
 #' ---
 #' title: "Downloading NASS/ARMSDB data"
 #' author: "M. Edward (Ed) Borasky"
-#' date: "September 3, 2015"
+#' date: "September 10, 2015"
 #' output:
 #'   html_document:
 #'     keep_md: true
