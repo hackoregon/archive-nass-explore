@@ -20,6 +20,14 @@ download.csv <- function(url) {
 #'
 #' Main script
 
+# Install any missing libraries
+if (!require('ggmap')) {
+    install.packages('ggmap', dependencies = TRUE)
+}
+if (!require('choroplethr')) {
+    install.packages('choroplethr', dependencies = TRUE)
+}
+
 # Load the data if the saved image exists
 if (file.exists('nass-arms.RData')) {
     load('nass-arms.RData')
